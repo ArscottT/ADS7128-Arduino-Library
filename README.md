@@ -264,7 +264,7 @@ The ADS7128 I2C address is determined by the ADDR pin:
 
 | ADDR Pin | I2C Address |
 |----------|-------------|
-| GND      | 0x10        |
+| Floating | 0x10        |
 | AVDD/8   | 0x11        |
 | 2×AVDD/8 | 0x12        |
 | 3×AVDD/8 | 0x13        |
@@ -284,6 +284,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Resources
 
-- [ADS7128 Datasheet](https://www.ti.com/product/ADS7128)
+- [ADS7128 Datasheet](https://www.ti.com/lit/ds/symlink/ads7128.pdf?ts=1771665530977)
 - [TI ADS7128 Product Page](https://www.ti.com/product/ADS7128)
-- [GitHub Repository](https://github.com/yourusername/ADS7128-Arduino-Library)
+- [GitHub Repository](https://github.com/ArscottT/ADS7128-Arduino-Library)
