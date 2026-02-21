@@ -1,0 +1,56 @@
+{
+  "name": "ADS7128",
+  "version": "1.0.0",
+  "description": "Arduino library for the TI ADS7128 8-channel 12-bit ADC with GPIO and window comparator features",
+  "keywords": [
+    "adc",
+    "analog",
+    "sensor",
+    "ads7128",
+    "texas instruments",
+    "i2c",
+    "gpio",
+    "window comparator",
+    "12-bit"
+  ],
+  "authors": [
+    {
+      "name": "TA",
+      "email": "your.email@example.com",
+      "url": "https://github.com/ArscottT"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArscottT/ADS7128-Arduino-Library.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ArscottT/ADS7128-Arduino-Library",
+  "frameworks": [
+    "arduino",
+    "espidf"
+  ],
+  "platforms": [
+    "espressif32",
+    "atmelavr",
+    "atmelsam",
+    "ststm32",
+    "teensy"
+  ],
+  "dependencies": [
+    {
+      "name": "Wire",
+      "frameworks": "arduino"
+    }
+  ],
+  "export": {
+    "include": [
+      "src/*",
+      "examples/*",
+      "LICENSE",
+      "README.md",
+      "keywords.txt",
+      "library.properties"
+    ]
+  }
+}

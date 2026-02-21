@@ -1,0 +1,73 @@
+#######################################
+# Syntax Coloring Map for ADS7128
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ADS7128	KEYWORD1
+SystemStatus	KEYWORD1
+SystemState	KEYWORD1
+PinMode	KEYWORD1
+DriveMode	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+softwareReset	KEYWORD2
+verifyDefaultConfiguration	KEYWORD2
+getSystemStatus	KEYWORD2
+isDeviceReady	KEYWORD2
+clearPowerOnResetFlag	KEYWORD2
+setPinMode	KEYWORD2
+getPinMode	KEYWORD2
+setDriveMode	KEYWORD2
+getDriveMode	KEYWORD2
+digitalWrite	KEYWORD2
+digitalRead	KEYWORD2
+analogRead	KEYWORD2
+analogReadVoltage	KEYWORD2
+writeRegister	KEYWORD2
+readRegister	KEYWORD2
+enableManualMode	KEYWORD2
+enableAutonomousMode	KEYWORD2
+enableWindowMode	KEYWORD2
+setChannelWindow	KEYWORD2
+setChannelHysteresis	KEYWORD2
+setWindowRegion	KEYWORD2
+setAlertLogic	KEYWORD2
+setAlertChannels	KEYWORD2
+setTriggerOn	KEYWORD2
+setTriggerPins	KEYWORD2
+setValueOnTrigger	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+PIN_MODE_ANALOG_INPUT	LITERAL1
+PIN_MODE_DIGITAL_INPUT	LITERAL1
+PIN_MODE_DIGITAL_OUTPUT	LITERAL1
+PIN_MODE_INVALID	LITERAL1
+DRIVE_MODE_OPEN_DRAIN	LITERAL1
+DRIVE_MODE_PUSH_PULL	LITERAL1
+
+ADS7128_REG_SYSTEM_STATUS	LITERAL1
+ADS7128_REG_GENERAL_CFG	LITERAL1
+ADS7128_REG_DATA_CFG	LITERAL1
+ADS7128_REG_OSR_CFG	LITERAL1
+ADS7128_REG_OPMODE_CFG	LITERAL1
+ADS7128_REG_PIN_CFG	LITERAL1
+ADS7128_REG_GPIO_CFG	LITERAL1
+ADS7128_REG_GPO_DRIVE_CFG	LITERAL1
+ADS7128_REG_GPO_VALUE	LITERAL1
+ADS7128_REG_GPI_VALUE	LITERAL1
+ADS7128_REG_SEQUENCE_CFG	LITERAL1
+ADS7128_REG_CHANNEL_SEL	LITERAL1
+ADS7128_REG_AUTO_SEQ_CH_SEL	LITERAL1
+ADS7128_REG_ALERT_CH_SEL	LITERAL1
+ADS7128_REG_ALERT_PIN_CFG	LITERAL1
+ADS7128_REG_EVENT_RGN	LITERAL1
