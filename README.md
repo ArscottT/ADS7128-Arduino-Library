@@ -32,6 +32,9 @@ Arduino library for the Texas Instruments ADS7128 8-channel, 12-bit analog-to-di
 #include <Wire.h>
 #include "ADS7128.h"
 
+// Enable debug output (Must Serial.begin() before adc.begin())
+#define ADS7128_DEBUG 1
+
 ADS7128 adc(0x10);
 
 void setup() {
@@ -78,6 +81,7 @@ void setup() {
   
   // Configure pin 0 as analog input
   adc.setPinMode(0, PIN_MODE_ANALOG_INPUT);
+  adc.adc.enableManualMode();
 }
 
 void loop() {
