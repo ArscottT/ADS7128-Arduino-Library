@@ -536,7 +536,7 @@ uint16_t ADS7128::analogRead(uint8_t channel) {
  */
 float ADS7128::analogReadVoltage(uint8_t channel, float vref) {
     uint16_t rawValue = analogRead(channel);
-    return (rawValue / 4095.0) * vref;
+    return (rawValue * vref) / 4096.0f;
 }
 
 /**
@@ -553,6 +553,9 @@ float ADS7128::analogReadVoltage(uint8_t channel, float vref) {
  * @return false One or more I2C writes failed.
  */
 bool ADS7128::enableManualMode() {
+    uint8_t reg = readRegister(ADS7128_REG_GENERAL_CFG);
+    reg |= (1 << 5);
+    bool success = writeRegister(ADS7128_REG_GENERAL_CFG, reg);           // Enable STATES registers
 
     // Configure for manual mode
     bool success = writeRegister(ADS7128_REG_OPMODE_CFG, 0x00);    // CONV_MODE=0 (manual)
@@ -949,7 +952,7 @@ uint16_t ADS7128::readChannelDataManual(uint8_t channel) {
     uint8_t msb = readRegister(msbReg);
     
     // Combine into 12-bit value (MSB contains upper 4 bits)
-    uint16_t value = ((msb & 0x0F) << 8) | lsb;
+    uint16_t value = (msb << 4) | lsb;
     
     return value;
 }
@@ -983,7 +986,7 @@ uint16_t ADS7128::readChannelDataAutonomous(uint8_t channel) {
     uint8_t msb = readRegister(msbReg);
     
     // Combine into 12-bit value (MSB contains upper 4 bits)
-    uint16_t value = ((msb & 0x0F) << 8) | lsb;
+    uint16_t value = (msb << 4) | lsb;
     
     return value;
 }
