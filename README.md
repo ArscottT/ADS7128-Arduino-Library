@@ -2,7 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Arduino Library](https://img.shields.io/badge/Arduino-Library-blue.svg)](https://www.arduino.cc/reference/en/libraries/)
-[![PlatformIO Registry](https://badges.registry.platformio.org/packages/yourusername/library/ADS7128.svg)](https://registry.platformio.org/libraries/yourusername/ADS7128)
+[<img src="https://cdn.registry.platformio.org/apple-touch-icon.png" height="36" alt="PlatformIO Registry">](https://registry.platformio.org/libraries/ghostcrab/ADS7128/)
+
 
 Arduino library for the Texas Instruments ADS7128 8-channel, 12-bit analog-to-digital converter with integrated GPIO and programmable window comparator.
 
